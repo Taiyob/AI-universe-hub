@@ -4,10 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header class="bg-[#0d6efd0d]">
+        <div class="navbar px-20 py-10">
+            <div class="navbar-start">
+              <h2 class="normal-case text-2xl font-bold">Hot Gadgets</h2>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#0D6EFD] rounded-lg text-white text-xl font-bold">Sign Up</a>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-content text-center">
+              <div class="text-center space-y-10">
+                <h1 class="text-black text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+                <p class="text-[#706F6F] text-lg font-normal w-auto mx-auto max-w-2xl">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.
+                </p>
+                <button class="btn btn-primary btn-lg">Buy Now</button>
+              </div>
+            </div>
+        </div>
+        <div class="px-20 py-10 text-center gap-5">
+            <div class="mockup-phone">
+                <div class="camera"></div> 
+                <div class="display">
+                  <div class="artboard artboard-demo phone-2">Hi.</div>
+                </div>
+            </div>
+            <div class="mockup-phone">
+                <div class="camera"></div> 
+                <div class="display">
+                  <div class="artboard artboard-demo phone-4">Hi.</div>
+                </div>
+            </div>
+            <div class="mockup-phone">
+                <div class="camera"></div> 
+                <div class="display">
+                  <div class="artboard artboard-demo phone-2">Hi.</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-8 my-10">
+        <h3 class="text-center mb-10 text-black text-3xl font-semibold">Search your phone</h3>
+        <div class="text-center">
+            <input class="input input-lg input-bordered join-item" placeholder="Search your phone"/>
+            <button class="btn btn-secondary btn-lg join-item rounded-lg">Search</button>
+        </div>
+    </main>
     <footer></footer>
     <script src="./js/ai-universe.js"></script>
 </body>
